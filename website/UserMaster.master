@@ -1,0 +1,222 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMaster.master.cs" Inherits="UserMaster" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <style type="text/css">
+        .prof:hover {
+            transform: scale(1.5,1.5);
+        }
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>"
+    <script>
+        $(document).ready(function () {
+            $('.myMenu > li').bind('mouseover', openSubMenu);
+            $('.myMenu > li').bind('mouseout', closeSubMenu);
+
+            function openSubMenu() {
+                $(this).find('ul').css('visibility', 'visible');
+            };
+
+            function closeSubMenu() {
+                $(this).find('ul').css('visibility', 'hidden');
+            };
+
+        });
+        $(document).ready(function () {
+            $("#Button1").hide();
+            $("#Button2").hide();
+        });
+        $(document).ready(function () {
+            $("#txttweet").focus(function () {
+                $(this).animate({ height: "5em" }, 500);
+                $("#Imgtweet").show();
+                $("#panelbottom").animate({ height: "150px" }, 500);
+            });
+        });
+
+        $(document).ready(function () {
+            $("#txttweet").blur(function () {
+                $(this).animate({ height: "1em" }, 500);
+                $("#panelbottom").animate({ height: "100px" }, 500);
+            });
+        });
+        $(document).ready(function () {
+            $("#Image1").click(function () {
+                $("#newAvatar").trigger("click");
+                $("#Button2").show();
+
+            });
+        });
+
+
+    </script>
+    <link href="Master.css" rel="stylesheet" />
+    <link href="Menu.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="header">
+        
+        <div class="innerheader1">
+           
+
+            </asp:Menu>
+    
+
+        </div>
+        <div class="innerheader2">
+            <br /><br /><br />
+            
+
+        </div>
+        <div class="innerheader3">
+            <div class="innerheader4">
+                <asp:TextBox ID="txtsearch" runat="server" PlaceHolder="Search the person" CssClass="textbox" Height="22px" Width="180px"></asp:TextBox>
+            </div>
+            <div class="innerheader5">
+                
+                
+            </div>
+            
+            <div class="innerheader6">
+                <asp:ImageButton ID="ImageButton1" runat="server" src="/Images/search.png"  height="27px" width="30px" CssClass="image" OnClick="ImageButton1_Click" /> 
+                
+            </div>
+            <div class="innerheader7">
+              
+                <asp:ImageButton ID="Imgmsg" runat="server" src="/Images/home.png" Height="40px" Width="40px" CssClass="message" OnClick="Imgmsg_Click" /> 
+                <asp:ImageButton ID="Imgcompose" runat="server" Height="40px" Width="40px" src="/Images/compose.png" CssClass="compose" OnClick="Imgcompose_Click1" />
+            </div>
+            <div class="innerheader8">
+                <br />
+                <asp:Menu ID="Menu1" CssClass="menu" runat="server" Orientation="Horizontal" Width="100px" Font-Size="Large" ForeColor="Black">
+                <StaticHoverStyle BackColor="Red" ForeColor="White" Height="20px" Font-Bold="True" Font-Italic="False" Font-Size="X-Large" />
+                    <DynamicMenuItemStyle BackColor="#660033" Font-Size="X-Large" ForeColor="White" Height="20px" Width="150px" VerticalPadding="10px" />
+                <Items>
+                    <asp:MenuItem Text="Profile" Value="Profile">
+                        <asp:MenuItem Text="Update Profile" Value="Update Profile" NavigateUrl="~/UpdateProfile.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="View Profile" Value="View Profile" NavigateUrl="~/MyProfile.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                    
+                        
+                  
+                    </Items>
+                    <StaticMenuItemStyle BackColor="Yellow" ForeColor="#660033" Font-Bold="False" Font-Size="X-Large" Height="20px" VerticalPadding="10px" />
+            </asp:Menu>
+                </div>
+            <div class="innerheader9">
+                <asp:ImageButton ID="imgsignout" runat="server" CssClass="signout" src="/Images/signout.png" Height="40px" Width="40px" OnClick="imgsignout_Click" /> 
+               </div>
+            
+            
+          
+        </div>
+    </div>
+        <div class="paneltop">
+            <img src="/Images/tweet1.png" style="float:left; height:90px; width:200px;" />
+         <p style="text-align:center; line-height:25px; font-size:x-large;">Connect with your friends — and other<br />
+                fascinating people. Get in-the-moment updates on the things that<br />
+                 interest you. And watch events unfold, in real time, from every angle.</p>
+            
+
+
+        </div>
+        <div class="panelleft">
+            <div class="panellefttop">
+                <%--<asp:Panel ID="Panel4" runat="server" Height="92px" BackColor="White"  Width="134px" style="background-image:url(http://localhost:49597/WebSite1/Images/dpro.png);border:solid;border-color:white;border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;margin-left:-506px;margin-top:-171px;">--%>
+                   
+                   
+                    
+                <%--</asp:Panel>--%>
+            </div>
+            <div class="panelmiddle">
+                <asp:Image ID="Image1" runat="server" width="134px" height="92px" CssClass="prof" />
+                    <asp:FileUpload ID="newAvatar" runat="server" name="newAvatar" style="display:none;"/>
+                <asp:Button ID="Button2" runat="server" Text="Upload" OnClick="Button2_Click1" />
+              <%--  <asp:Label ID="lblname" runat="server" Font-Bold="true" ForeColor="Black" Font-Size="X-Large"></asp:Label>--%>
+                <asp:LinkButton ID="lblname" runat="server" OnClick="lblname_Click"></asp:LinkButton>
+                <br />
+                <asp:Label ID="lbluser" runat="server" CssClass="username"></asp:Label>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+               
+                
+              &nbsp;&nbsp;&nbsp;&nbsp;  <asp:Label ID="lbltweets" runat="server" Text="TWEETS" Font-Size="Small"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="lblfollowing" runat="server" Text="FOLLOWING" Font-Size="Small"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="lblfollowers" runat="server" Text="FOLLOWERS" Font-Size="Small"></asp:Label>
+                <br />
+                <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <asp:LinkButton ID="Label4" runat="server" Text="0" OnClick="Label4_Click"></asp:LinkButton>
+                
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="Label5" runat="server" Text="0" OnClick="Label5_Click"></asp:LinkButton>
+           
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:LinkButton ID="Label6" runat="server" Text="0" OnClick="Label6_Click"></asp:LinkButton>
+                 
+            </div>
+            <div id="panelbottom" class="panelbottom" style="height:80px;">
+                <textarea id="txttweet" runat="server" name="textar" placeholder="Enter your Tweet" rows="1" cols="10" class="textarea"></textarea>
+               
+                <asp:ImageButton ID="Imgtweet" Height="27px" Width="70px" CssClass="tweet" runat="server" src="/Images/tweet.jpg" OnClick="Imgtweet_Click" /> 
+            </div>
+        </div>
+        <div class="panelbody">
+             <asp:Panel ID="Panel1" runat="server" CssClass="popuppanel" BackColor="LightPink" Height="400px" Width="400px">
+                 <asp:ImageButton ID="imgclose" runat="server" src="/Images/close.png" Height="30px" Width="40px" />
+                 <br />
+                 <br />
+                 <textarea id="TextArea1" runat="server" placeholder="Enter your Tweet" style="height:150px; margin:40px; width:280px; border-style:solid; border-color:black; border-width:5px;" cols="10" rows="4"></textarea>
+                <br />
+                 <br />
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="btnsubmit" runat="server" Text="TWEET" Height="50px" Width="150px"  OnClick="btnsubmit_Click" />
+                </asp:Panel>
+                <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                <asp:ModalPopupExtender ID="ModalPopupExtender1" DropShadow="true" BackgroundCssClass="popup" PopupControlID="Panel1" TargetControlID="Imgcompose" CancelControlID="imgclose" runat="server"></asp:ModalPopupExtender>
+           
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+           
+        </div>
+        <div class="panelright">
+            <p style="font-family:'Bell MT'; font-size:x-large; text-align:center; font-weight:500";>Who to Follow</p>
+            <asp:GridView ID="gdvusers" CssClass="users" runat="server" AutoGenerateColumns="False" AutoGenerateSelectButton="True" CellPadding="4" ForeColor="#333333" GridLines="None" AllowPaging="True" DataKeyNames="user_id" OnPageIndexChanging="gdvusers_PageIndexChanging" OnSelectedIndexChanged="gdvusers_SelectedIndexChanged" PageSize="5" Width="250px">
+                <AlternatingRowStyle BackColor="White" />
+                <Columns>
+                <asp:TemplateField HeaderText="People you may know">
+                    
+                    <ItemTemplate>
+                        <asp:Label ID="Label11" Text='<%# Eval("FullName") %>' runat="server" ></asp:Label>
+                    </ItemTemplate>
+                    </asp:TemplateField>
+                    </Columns>
+                <EditRowStyle BackColor="#7C6F57" />
+                <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
+                <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" Height="50px" HorizontalAlign="Left" VerticalAlign="Middle" />
+                <PagerStyle BackColor="#990000" ForeColor="White" HorizontalAlign="Center" />
+                <RowStyle BackColor="#E3EAEB" Height="40px" HorizontalAlign="Justify" VerticalAlign="Middle" />
+                <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="True" ForeColor="#333333" />
+                <SortedAscendingCellStyle BackColor="#F8FAFA" />
+                <SortedAscendingHeaderStyle BackColor="#246B61" />
+                <SortedDescendingCellStyle BackColor="#D4DFE1" />
+                <SortedDescendingHeaderStyle BackColor="#15524A" />
+            </asp:GridView>
+        </div>
+        
+      
+    </form>
+</body>
+</html>

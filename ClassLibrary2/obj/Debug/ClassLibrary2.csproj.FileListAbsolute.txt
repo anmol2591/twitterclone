@@ -1,0 +1,6 @@
+C:\Users\Manager\Desktop\twitteroffice\ClassLibrary2\bin\Debug\ClassLibrary2.dll.config
+C:\Users\Manager\Desktop\twitteroffice\ClassLibrary2\bin\Debug\ClassLibrary2.dll
+C:\Users\Manager\Desktop\twitteroffice\ClassLibrary2\bin\Debug\ClassLibrary2.pdb
+C:\Users\Manager\Desktop\twitteroffice\ClassLibrary2\obj\Debug\ClassLibrary2.csprojResolveAssemblyReference.cache
+C:\Users\Manager\Desktop\twitteroffice\ClassLibrary2\obj\Debug\ClassLibrary2.dll
+C:\Users\Manager\Desktop\twitteroffice\ClassLibrary2\obj\Debug\ClassLibrary2.pdb

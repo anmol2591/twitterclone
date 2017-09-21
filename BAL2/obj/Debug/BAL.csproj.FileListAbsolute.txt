@@ -1,0 +1,7 @@
+C:\Users\Manager\Desktop\twitteroffice\BAL2\bin\Debug\BAL2.dll
+C:\Users\Manager\Desktop\twitteroffice\BAL2\bin\Debug\BAL2.pdb
+C:\Users\Manager\Desktop\twitteroffice\BAL2\bin\Debug\ClassLibrary2.dll
+C:\Users\Manager\Desktop\twitteroffice\BAL2\bin\Debug\ClassLibrary2.pdb
+C:\Users\Manager\Desktop\twitteroffice\BAL2\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+C:\Users\Manager\Desktop\twitteroffice\BAL2\obj\Debug\BAL2.dll
+C:\Users\Manager\Desktop\twitteroffice\BAL2\obj\Debug\BAL2.pdb

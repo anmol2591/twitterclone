@@ -1,0 +1,142 @@
+﻿body {    height: 313px;
+        
+          
+            background:url(http://localhost:61109/Images/darkgrey.jpg);
+           
+            background-repeat:repeat;
+           
+}
+.header {
+height:95px;
+width:auto;
+background-color:transparent;
+font-family:Broadway;
+}
+.innerheader1 {
+height:95px;
+width:200px;
+float:left;
+}
+.innerheader2 {
+height:95px;
+width:200px;
+float:left;
+}
+.innerheader3 {
+height:95px;
+float:left;
+font-family:'Arial Rounded MT';
+font-size:medium;
+color:white;
+margin-left:315px;
+margin-top:10px;
+margin-bottom:35px;
+}
+.header1 {
+    height: 200px;
+    width:auto;
+   
+   
+}
+.horizontal {
+height:20px;
+background-color:red;
+opacity:0.3;
+}
+.header2 {
+height:300px;
+background-color:Green;
+opacity:5;
+}
+.middle {
+height:550px;
+left:30px;
+right:30px;
+top:80px;
+background-color:inherit;
+opacity:2;
+}
+.textbox {
+margin-left:10px;
+width:150px;
+margin-top:12px;
+border-radius: 3px;
+border: 1px solid #CCC;
+padding: 8px;
+font-weight: 200;
+font-size: 15px;
+font-family: Verdana;
+box-shadow: 1px 1px 5px #CCC;
+background-color:beige;
+}
+.label {
+    margin-left :35px;
+    width:20px;
+    margin-top:30px;
+   
+}
+.button {
+margin-bottom:20px;
+}
+.middleleft {
+width: 600px;
+float:left;
+height:500px;
+}
+.middleright {
+width:600px;
+float:left;
+height:500px;
+text-align:center;
+font-size:larger;
+color:Red;
+font-family:cursive;
+font-weight:bolder;
+margin-left:50px;
+}
+.table {
+padding:2em;
+text-align:left;
+border-collapse:collapse;
+border-bottom:20px; border-top-width:thick;
+}
+.class
+{
+    background-color:White;
+    font-family:Verdana;
+    font-size:x-large;
+    font-weight:bolder;
+    font-variant:normal;
+}
+.image {
+margin-top:20px;
+margin-left:72px;
+}
+.middlebottem {
+width:600px;
+font-family:Arial;
+font-size:medium;
+color:red;
+font-weight:100;
+text-align:start;
+margin-top:20px;
+}
+.linkbutton {
+    text-align:right;
+}
+
+.loginmiddle {
+height:500px;
+width:600px;
+margin-top:200px;
+margin-left:150px;
+margin-right:150px;
+}
+.innerheader8 {
+    width:200px;
+    height:95px;
+    float:left;
+}
+
+
+

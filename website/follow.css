@@ -1,0 +1,227 @@
+﻿body {
+    background-color:black  ;
+}
+.header {
+    background-color:beige;
+    height:60px;
+}
+.innerheader1 {
+    height:60px;
+    width:250px;
+    float:left;
+}
+.innerheader2 {
+        height:60px;
+        width:250px;
+        float:left;
+}
+.innerheader3 {
+    height:60px;
+    float:left;
+}
+.innerheader4 {
+height:60px;
+width:72px;
+float:left;
+}
+.innerheader5 {
+    height:60px;
+    width:30px;
+    float:left;
+}
+.innerheader6 {
+    height:60px;
+    width:100px;
+    float:left;
+    margin-left:40px;
+}
+.innerheader7 {
+    height:60px;
+    width: -5px;
+    float:left;
+    margin-left: -40px;
+}
+.textbox {
+    margin-top:20px;
+    border-radius:3px 4px 3px 4px;
+    border-style:inset;
+    border-bottom-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top-left-radius:10px;
+}
+.image {
+    margin-top:20px;
+    margin-left:45px;
+}
+.message {
+    margin-top:10px;
+    margin-left:70px;
+}
+.compose {
+    margin-top:10px;
+    margin-left:50px;
+}
+.paneltop {
+    height:90px;
+    width:1252px;
+    margin-left:64px;
+    margin-right:200px;
+    margin-top:20px;
+    background-color:ivory;
+    border-bottom-left-radius:27px;
+    border-bottom-right-radius:27px;
+    border-top-left-radius:27px;
+    border-top-right-radius:27px;
+}
+.panelleft {
+    height:400px;
+    width:300px;
+    margin-left:65px;
+    margin-top:20px;
+    float:left;
+    margin-right:20px;
+}
+.panellefttop {
+    height:55px;
+    width:300px;
+    border-top-left-radius:27px;
+    border-top-right-radius:27px;
+    background-color:darkgreen;
+    opacity:0.5;
+}
+.panelmiddle {
+    height:247px;
+    width:300px;
+    background-color:white;
+}
+.panelbottom {
+    height:170px;
+    width:300px;
+    background-color:lightgreen;
+     border-bottom-left-radius:27px;
+    border-bottom-right-radius:27px;
+}
+.profileimage {
+    margin-left:5px;
+    margin-top: 0px;
+    float:left;
+}
+.profilename {
+    font-family:cursive;
+    float:left;
+}
+.username {
+    font-style:italic;
+    color:grey;
+    float:left;
+    font-family:cursive;
+    font-size:medium;
+}
+.textarea {
+    height:1em;
+    width: 70%;
+    padding:2px;
+    margin:15px;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    border-color:deeppink;
+    float:left;
+   
+}
+.resend {
+    width:250px;
+    height:100px;
+}
+.tweet {
+    float:right;
+    margin-left:204px;
+    margin-top:-7px;
+    float:left;
+}
+.panelbody {
+    height:auto;
+    width:630px;
+    margin-top:20px;
+    margin-left:8px;
+    float:left;
+    border-bottom-left-radius:27px;
+    border-bottom-right-radius:27px;
+    border-top-left-radius:27px;
+    border-top-right-radius:27px;
+    background-color:ivory;
+}
+.panelright {
+    
+    width:300px;
+    margin-left:10px;
+    margin-top:20px;
+    float:left;
+    background-color:ivory;
+     border-bottom-left-radius:27px;
+    border-bottom-right-radius:27px;
+    border-top-left-radius:27px;
+    border-top-right-radius:27px;
+}
+.gridview {
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
+.followuser {
+    margin-top:30px;
+}
+.panel {
+    height:auto;
+    width:400px;
+    margin-left:500px;
+    margin-top:40px;
+     border-bottom-left-radius:27px;
+    border-bottom-right-radius:27px;
+    border-top-left-radius:27px;
+    border-top-right-radius:27px;
+}
+.label {
+    width:400px;
+}
+.update {
+    margin-left:100px;
+}
+.innerheader8 {
+    width:140px;
+    height:60px;
+    float:left;
+    margin-left:20px;
+    margin-top: -9px;
+}
+.innerheader9 {
+    width:100px;
+    height:60px;
+    float:left;
+}
+.users {
+    margin:30px;
+}
+.menu {
+    float:left;
+}
+.signout {
+    float:left;
+    margin:10px;
+}
+.popup {
+     filter: alpha(opacity=90);
+        opacity: 0.8;
+        border-bottom-left-radius:27px;
+    border-bottom-right-radius:27px;
+    border-top-left-radius:27px;
+    border-top-right-radius:27px;
+
+}
+.popuppanel {
+      border-bottom-left-radius:27px;
+    border-bottom-right-radius:27px;
+    border-top-left-radius:27px;
+    border-top-right-radius:27px;
+}

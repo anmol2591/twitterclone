@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="twitter" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=twitter;Integrated Security=True" SettingsObjectName="ClassLibrary2.Properties.Settings" SettingsPropertyName="twitterConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Person" Member="Persons">
+    <Type Name="Person">
+      <Column Name="user_id" Type="System.String" DbType="VarChar(25) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="fullName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="joined" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Imag" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Person_following" Member="followings" ThisKey="user_id" OtherKey="user_id" Type="following" />
+      <Association Name="Person_following1" Member="followings1" ThisKey="user_id" OtherKey="following_id" Type="following" />
+      <Association Name="Person_tweet" Member="tweets" ThisKey="user_id" OtherKey="user_id" Type="tweet" />
+    </Type>
+  </Table>
+  <Table Name="dbo.following" Member="followings">
+    <Type Name="following">
+      <Column Name="user_id" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="following_id" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Association Name="Person_following" Member="Person" ThisKey="user_id" OtherKey="user_id" Type="Person" IsForeignKey="true" />
+      <Association Name="Person_following1" Member="Person1" ThisKey="following_id" OtherKey="user_id" Type="Person" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tweet" Member="tweets">
+    <Type Name="tweet">
+      <Column Name="tweet_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="user_id" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="message" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="created" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Person_tweet" Member="Person" ThisKey="user_id" OtherKey="user_id" Type="Person" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClasses">
+  <DataContextMoniker Name="/DataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="32876774-3e69-4b54-8591-5320df23cb22" absoluteBounds="3.5, 1.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DataClassesDataContext/Person" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cc70c66e-a3b6-4741-9631-339e74c112d3" absoluteBounds="3.515, 1.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="127ab6cc-72b0-4a77-9e1c-a592af0f6b85" absoluteBounds="1.125, 1.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DataClassesDataContext/following" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cc4c3e86-6c0d-4374-a3cf-73ce4162a2b8" absoluteBounds="1.1400000000000001, 1.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.5 : 1.94314697265625); (3.125 : 1.94314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Person/Person_following" />
+      <nodes>
+        <classShapeMoniker Id="32876774-3e69-4b54-8591-5320df23cb22" />
+        <classShapeMoniker Id="127ab6cc-72b0-4a77-9e1c-a592af0f6b85" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 1.59657348632813); (3.125 : 1.59657348632813)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Person/Person_following1" />
+      <nodes>
+        <classShapeMoniker Id="32876774-3e69-4b54-8591-5320df23cb22" />
+        <classShapeMoniker Id="127ab6cc-72b0-4a77-9e1c-a592af0f6b85" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="52eca24b-85fe-4347-8a43-a796f9a3b795" absoluteBounds="1.875, 3.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesDataContext/tweet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="554d3ace-52a1-4279-8906-93f0ef2b31ea" absoluteBounds="1.8900000000000001, 3.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.6875005 : 3.53049967447917); (4.6875005 : 4.30454802604167); (3.875 : 4.30454802604167)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesDataContext/Person/Person_tweet" />
+      <nodes>
+        <classShapeMoniker Id="32876774-3e69-4b54-8591-5320df23cb22" />
+        <classShapeMoniker Id="52eca24b-85fe-4347-8a43-a796f9a3b795" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

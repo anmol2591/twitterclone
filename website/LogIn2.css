@@ -1,0 +1,48 @@
+﻿body {
+    background:url(http://localhost:61109/Images/background.jpg);
+    background-repeat:repeat;
+}
+
+.header {
+height:95px;
+width:auto;
+background-color:transparent;
+font-family:Broadway;
+}
+.innerheader1 {
+height:95px;
+width:200px;
+float:left;
+}
+.innerheader2 {
+height:95px;
+width:200px;
+float:left;
+}
+.innerheader3 {
+height:95px;
+float:left;
+font-family:'Arial Rounded MT';
+font-size:medium;
+color:white;
+margin-left:315px;
+margin-top:10px;
+margin-bottom:35px;
+}
+.middle {
+height:150px;
+text-align:justify;
+font-family:cursive;
+font-weight:200;
+color:white;
+}
+.bottom {
+height:268px;
+margin-top:130px;
+margin-left:500px;
+    width: 554px;
+}
+.imagebutton {
+    background-image:url(http://localhost:56363/Images/followme.png);
+}
+
